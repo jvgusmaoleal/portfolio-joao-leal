@@ -6,7 +6,7 @@
 
 **Architecture:** Site 100% estático (SSG) em Next.js App Router. Conteúdo em arquivos TypeScript tipados (`content/`), separados dos componentes visuais (`components/`). Páginas compõem seções; nenhum backend, nenhuma rota de API na V1.
 
-**Tech Stack:** Next.js 15 (App Router) · TypeScript estrito · Tailwind CSS v4 · next/font (Inter + JetBrains Mono) · @vercel/analytics · deploy Vercel.
+**Tech Stack:** Next.js 16 (App Router — scaffold instalou 16.2.11; cuidado com idioms de Next 15 desatualizados, consultar AGENTS.md gerado) · TypeScript estrito · Tailwind CSS v4 · next/font (Inter + JetBrains Mono) · @vercel/analytics · deploy Vercel.
 
 **Spec:** `docs/superpowers/specs/2026-07-22-portfolio-design.md`
 
