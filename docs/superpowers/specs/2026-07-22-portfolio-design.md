@@ -21,7 +21,7 @@ João Leal quer um portfólio pessoal para ser contratado como **product builder
 
 - **Estética:** dark + terminal ("builder"). O site já parece o trabalho.
 - **Cor de destaque:** âmbar fósforo retrô (referência `#fbbf24` sobre fundo `#0c0a09`, tons stone/warm — ajuste fino na implementação)
-- **Tipografia:** sans moderna para leitura (ex: Inter/Geist) + **JetBrains Mono** para elementos de terminal (prompt, tags, números, labels)
+- **Tipografia:** **Inter** para leitura + **JetBrains Mono** para elementos de terminal (prompt, tags, números, labels)
 - **Avatar:** ilustração P&B do João (barba + óculos, traço grosso) fornecida pelo usuário. Usos: hero, favicon, OG image. Em círculo com anel âmbar sobre o dark.
 - **Marca:** "João Leal — Product Builder" (título em inglês, corpo do site em PT-BR)
 - **Detalhe de personalidade:** elementos de terminal funcionais na estética (prompt `~/joao-leal $`), 404 "comando não encontrado"
@@ -43,7 +43,7 @@ Drakes e Orthotecniques ficam como cards ricos na home (sem página própria na 
 ### 5.1 Home `/`
 
 1. **Hero terminal:** `~/joao-leal $ whoami` → nome, título, uma frase de posicionamento ("Construo produtos que geram receita real, com IA no centro do processo."), avatar, CTAs "Ver projetos" / "Contato"
-2. **Prova em números:** 28.000 linhas em produção · 4 áreas de empresa atendidas · 6+ usuários diários · 3 negócios como sócio/builder (números conferidos na exploração do repositório costa-crm)
+2. **Prova em números:** 28.000 linhas em produção · 4 áreas de empresa atendidas · 6+ usuários diários · 3 negócios construídos/co-fundados (Costa como builder; Drakes e Ortho como sócio) — números do CRM conferidos na exploração do repositório costa-crm
 3. **Card Costa Maritime** (caso principal) → `/crm`. Menciona a dupla entrega: CRM interno + site institucional (link para o site no ar). Print da tela do CRM.
 4. **Card Drakes Company** (sócio): email marketing, sites vendidos, recepcionista de IA, consultoria de GEO. Clientes: odontologia, oftalmologia (hospitais), restaurantes, cursos (ex: bolos), ortopedia. **Link para o site da Drakes no ar.**
 5. **Card Orthotecniques** (sócio): como vibe coding é empregado no dia a dia da operação. **Link para o site no ar.**
