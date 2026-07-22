@@ -37,7 +37,7 @@ export const crm = {
     {
       name: "Operacional",
       blurb:
-        "Kanban de execução com ordens de serviço (fainas) tarefa a tarefa: anexos, tags, controle de executado e do que vai para faturamento.",
+        "Kanban de execução com ordens de serviço (fainas) tarefa a tarefa: anexos, tags, controle do que foi executado e do que vai para faturamento.",
       image: "operacional.png",
     },
     {
