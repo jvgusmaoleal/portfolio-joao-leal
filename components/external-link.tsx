@@ -15,6 +15,7 @@ export function ExternalLink({
       className={`text-amber underline-offset-4 transition-colors hover:text-amber-soft hover:underline ${className}`}
     >
       {children}
+      <span className="sr-only"> (abre em nova aba)</span>
     </a>
   );
 }
