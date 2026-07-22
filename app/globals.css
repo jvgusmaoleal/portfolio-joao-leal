@@ -3,6 +3,7 @@
 @theme {
   --color-bg: #0c0a09;
   --color-surface: #17140f;
+  /* decorativo apenas (~1.2:1 sobre bg) — para bordas de elementos interativos/foco use amber */
   --color-line: #292524;
   --color-ink: #fafaf9;
   --color-mute: #a8a29e;
@@ -25,4 +26,10 @@ body {
 ::selection {
   background: var(--color-amber);
   color: var(--color-bg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }
