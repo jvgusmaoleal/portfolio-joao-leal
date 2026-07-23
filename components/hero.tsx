@@ -5,7 +5,7 @@ import { site } from "@/content/site";
 export function Hero() {
   return (
     <header className="mx-auto max-w-5xl px-5 pb-10 pt-20 sm:pb-16 sm:pt-28">
-      <div className="flex flex-col-reverse items-start gap-8 sm:flex-row sm:items-center sm:justify-between">
+      <div className="flex flex-col-reverse items-start gap-6 sm:gap-8 sm:flex-row sm:items-center sm:justify-between">
         <div>
           <p aria-hidden="true" className="font-mono text-sm sm:text-base">
             <span className="text-amber">{site.promptPath} $</span>{" "}
@@ -41,7 +41,7 @@ export function Hero() {
           width={160}
           height={160}
           priority
-          className="size-40 rounded-full border-2 border-amber bg-ink object-cover"
+          className="size-28 rounded-full border-2 border-amber bg-ink object-cover sm:size-40"
         />
       </div>
     </header>
