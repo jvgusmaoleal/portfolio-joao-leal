@@ -34,7 +34,7 @@ function CardLink({
 export function ProjectCard({ project }: { project: Project }) {
   return (
     <article className="flex flex-col rounded-lg border border-line bg-surface p-6">
-      <span className="w-fit rounded-full border border-amber/30 bg-amber/10 px-3 py-1 font-mono text-[11px] text-amber">
+      <span className="rounded-full border border-amber/30 bg-amber/10 px-3 py-1 font-mono text-[11px] text-amber">
         {project.badge}
       </span>
       <h3 className="mt-4 text-xl font-bold">{project.name}</h3>

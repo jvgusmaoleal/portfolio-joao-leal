@@ -22,6 +22,7 @@ export function ModuleGallery() {
                 alt={`Tela do módulo ${mod.name} do CRM`}
                 width={1280}
                 height={800}
+                sizes="(min-width: 640px) 50vw, 100vw"
                 className="rounded border border-line"
               />
             ) : (

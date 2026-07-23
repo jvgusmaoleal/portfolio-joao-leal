@@ -1,6 +1,7 @@
 # Roteiro de prints do CRM (dados fictícios)
 
 Resolução: janela do navegador em 1440px de largura. Tema/estado real do sistema.
+Proporção: recorte os 7 prints numa proporção consistente (~16:10, ex: 1440×900) para a galeria ficar visualmente uniforme.
 Antes de capturar: carregar dados de demonstração (sem nomes reais de clientes,
 valores reais ou e-mails reais). Salvar em `public/crm/` com os nomes EXATOS abaixo.
 
