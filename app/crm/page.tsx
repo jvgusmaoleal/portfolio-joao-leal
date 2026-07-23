@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { CaseHero } from "@/components/crm/case-hero";
+import { ModuleGallery } from "@/components/crm/module-gallery";
 import { Section } from "@/components/section";
 import { crm } from "@/content/crm";
 
@@ -20,6 +21,9 @@ export default function CrmCasePage() {
             </p>
           ))}
         </div>
+      </Section>
+      <Section cmd="ls modulos/" title="A solução: 7 módulos, um fluxo">
+        <ModuleGallery />
       </Section>
     </main>
   );
