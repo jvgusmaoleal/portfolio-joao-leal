@@ -22,7 +22,7 @@ export function Hero() {
           href={hero.ctaPrimary.href}
           className="rounded-md bg-amber px-5 py-2.5 font-mono text-sm font-bold text-bg transition-colors hover:bg-amber-soft"
         >
-          {hero.ctaPrimary.label} →
+          {hero.ctaPrimary.label} <span aria-hidden="true">→</span>
         </a>
         <a
           href={hero.ctaSecondary.href}

@@ -6,7 +6,7 @@ export function BackLink() {
       href="/"
       className="font-mono text-sm text-mute transition-colors hover:text-amber"
     >
-      ← cd ~/
+      <span aria-hidden="true">←</span> cd ~/
     </Link>
   );
 }
