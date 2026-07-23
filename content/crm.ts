@@ -5,7 +5,7 @@ export const crm = {
   cmd: "cat caso-costa-maritime.md",
   title: "Do papel à produção: o CRM que roda a Costa Maritime",
   subtitle:
-    "Como uma pessoa, com IA no processo, construiu em ~4 meses o sistema que hoje atende comercial, operações, financeiro e suprimentos de uma empresa de serviços marítimos.",
+    "Como uma pessoa construiu em 4 meses, com IA no processo, o sistema que atende comercial, operações, financeiro e suprimentos de uma empresa marítima.",
 
   problem: {
     heading: "O problema",
@@ -63,8 +63,8 @@ export const crm = {
   stack: {
     heading: "Stack e integrações",
     decisions: [
-      "Frontend em JavaScript puro — decisão deliberada: zero dependências npm no núcleo, carregamento instantâneo e manutenção simples.",
-      "Proxy em Node.js fazendo a ponte segura com a Microsoft Graph API.",
+      "Frontend em JavaScript puro, decisão deliberada: zero dependências npm no núcleo, carregamento instantâneo e manutenção simples.",
+      "Proxy em Node.js faz a ponte segura com a Microsoft Graph API.",
       "Supabase (PostgreSQL, região São Paulo) com 23 tabelas e migrações versionadas.",
       "Frontend na Vercel, proxy no Railway — deploy contínuo via GitHub.",
     ],
@@ -86,8 +86,8 @@ export const crm = {
   aiProcess: {
     heading: "IA no processo",
     paragraphs: [
-      "O sistema foi construído em 28 fases documentadas entre abril e julho de 2026 — cada fase com spec, implementação e validação com os usuários reais.",
-      "Vibe coding aqui não é gerar código às cegas: é usar IA para transformar conversa com usuário em spec, spec em tela funcionando, e feedback em iteração — no mesmo dia. É o que permite uma pessoa entregar o que normalmente pediria uma equipe.",
+      "O sistema foi construído em 28 fases documentadas entre abril e julho de 2026: cada fase com spec, implementação e validação com os usuários reais.",
+      "Vibe coding aqui não é gerar código às cegas: é usar IA para transformar conversa com usuário em spec, spec em tela funcionando, feedback em iteração, tudo no mesmo dia. É o que permite uma pessoa entregar o que normalmente pediria uma equipe.",
     ],
     facts: [
       "28 fases de desenvolvimento em ~4 meses",
@@ -118,7 +118,7 @@ export const crm = {
       },
     ] satisfies AreaResult[],
     extra:
-      "Além do CRM, o site institucional da Costa Maritime também foi construído com vibe coding — a presença digital completa da empresa, de ponta a ponta.",
+      "Além do CRM, o site institucional da Costa Maritime também foi construído com vibe coding. A presença digital da empresa, de ponta a ponta, saiu do mesmo processo.",
     siteUrl: site.links.costaSite,
   },
 };
