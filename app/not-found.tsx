@@ -1,5 +1,10 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/content/site";
+
+export const metadata: Metadata = {
+  title: "404 — comando não encontrado",
+};
 
 export default function NotFound() {
   return (
