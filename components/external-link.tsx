@@ -12,7 +12,7 @@ export function ExternalLink({
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className={`text-amber underline-offset-4 transition-colors hover:text-amber-soft hover:underline ${className}`}
+      className={`text-amber underline underline-offset-4 transition-colors hover:text-amber-soft ${className}`}
     >
       {children}
       <span className="sr-only"> (abre em nova aba)</span>
