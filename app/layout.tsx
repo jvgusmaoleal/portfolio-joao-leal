@@ -10,6 +10,7 @@ const jbMono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-jbmono" })
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
+  alternates: { canonical: "/" },
   title: {
     default: `${site.name} — ${site.title}`,
     template: `%s · ${site.name}`,
@@ -18,6 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "pt_BR",
+    url: site.url,
     siteName: `${site.name} — ${site.title}`,
     title: `${site.name} — ${site.title}`,
     description: site.description,

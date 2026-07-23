@@ -8,10 +8,25 @@ import { AiProcess } from "@/components/crm/ai-process";
 import { ResultsGrid } from "@/components/crm/results-grid";
 import { Section } from "@/components/section";
 import { crm } from "@/content/crm";
+import { site } from "@/content/site";
 
 export const metadata: Metadata = {
   title: "Estudo de caso: CRM Costa Maritime",
   description: crm.subtitle,
+  alternates: { canonical: "/crm" },
+  openGraph: {
+    type: "website",
+    locale: "pt_BR",
+    url: "/crm",
+    siteName: `${site.name} — ${site.title}`,
+    title: "Estudo de caso: CRM Costa Maritime",
+    description: crm.subtitle,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Estudo de caso: CRM Costa Maritime",
+    description: crm.subtitle,
+  },
 };
 
 export default function CrmCasePage() {
