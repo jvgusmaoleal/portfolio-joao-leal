@@ -3,7 +3,7 @@ import type { ContactChannel } from "./types";
 export const site = {
   name: "João Leal",
   title: "Product Builder",
-  url: "https://portfolio-joao-leal.vercel.app", // trocar pelo domínio final na Task 16
+  url: "https://joaoleal.dev",
   description:
     "Construo produtos que geram receita real, com IA no centro do processo. Do primeiro protótipo à produção que a empresa inteira usa.",
   promptPath: "~/joao-leal",
