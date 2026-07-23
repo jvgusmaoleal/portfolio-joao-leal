@@ -1,13 +1,7 @@
 import Image from "next/image";
 import { crm } from "@/content/crm";
 import { TerminalWindow } from "@/components/terminal-window";
-import { existsSync } from "node:fs";
-import { join } from "node:path";
-
-function printExists(file?: string): boolean {
-  if (!file) return false;
-  return existsSync(join(process.cwd(), "public", "crm", file));
-}
+import { printExists } from "@/lib/prints";
 
 export function ModuleGallery() {
   return (
@@ -26,7 +20,7 @@ export function ModuleGallery() {
                 className="rounded border border-line"
               />
             ) : (
-              <div className="flex aspect-video items-center justify-center rounded border border-dashed border-line">
+              <div className="flex aspect-[16/10] items-center justify-center rounded border border-dashed border-line">
                 <p aria-hidden="true" className="font-mono text-xs text-mute">
                   $ carregando print de {mod.name.toLowerCase()}...
                 </p>

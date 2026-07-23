@@ -7,6 +7,7 @@ export type Project = {
   badge: string;
   name: string;
   description: string;
+  image?: string; // print em public/crm/ — renderiza no card quando o arquivo existir
   highlights: string[];
   links: ProjectLink[]; // primeiro link = ação primária
 };

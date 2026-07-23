@@ -118,7 +118,7 @@ export const crm = {
       },
     ] satisfies AreaResult[],
     extra:
-      "Além do CRM, o site institucional da Costa Maritime também foi construído com vibe coding. A presença digital da empresa, de ponta a ponta, saiu do mesmo processo.",
+      "Hoje, mais de seis pessoas usam o sistema todos os dias. Além do CRM, o site institucional da Costa Maritime também foi construído com vibe coding. A presença digital da empresa, de ponta a ponta, saiu do mesmo processo.",
     siteUrl: site.links.costaSite,
   },
 };

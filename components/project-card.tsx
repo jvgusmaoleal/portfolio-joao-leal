@@ -1,5 +1,7 @@
+import Image from "next/image";
 import Link from "next/link";
 import type { Project } from "@/content/types";
+import { printExists } from "@/lib/prints";
 
 function CardLink({
   link,
@@ -34,7 +36,17 @@ function CardLink({
 export function ProjectCard({ project }: { project: Project }) {
   return (
     <article className="flex flex-col rounded-lg border border-line bg-surface p-6">
-      <span className="rounded-full border border-amber/30 bg-amber/10 px-3 py-1 font-mono text-[11px] text-amber">
+      {project.image && printExists(project.image) ? (
+        <Image
+          src={`/crm/${project.image}`}
+          alt={`Tela do sistema ${project.name}`}
+          width={1280}
+          height={800}
+          sizes="(min-width: 1024px) 984px, 100vw"
+          className="mb-4 rounded border border-line"
+        />
+      ) : null}
+      <span className="w-fit rounded-full border border-amber/30 bg-amber/10 px-3 py-1 font-mono text-[11px] text-amber">
         {project.badge}
       </span>
       <h3 className="mt-4 text-xl font-bold">{project.name}</h3>

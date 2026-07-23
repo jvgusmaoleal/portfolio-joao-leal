@@ -36,7 +36,7 @@ Nenhum arquivo criado — só coleta. Os valores entram em `content/site.ts` na 
 
 1. URL do site da **Costa Maritime** (no ar)
 2. URL do site da **Drakes Company** (provável `https://drakescompany.com` — confirmar)
-3. URL do site da **Orthotecniques**
+3. URL do site da **Orthotechniques**
 4. Número de **WhatsApp** para contato profissional (formato internacional, ex: `5511999999999`)
 5. URL do perfil **LinkedIn**
 6. E-mail de contato público (default: `contato@drakescompany.com` — confirmar)
@@ -327,9 +327,9 @@ export const projects: Project[] = [
   {
     id: "ortho",
     badge: "Sócio",
-    name: "Orthotecniques",
+    name: "Orthotechniques",
     description:
-      "Na operação da Orthotecniques, vibe coding é ferramenta do dia a dia: sistemas e automações internas construídos conforme a necessidade do negócio aparece.",
+      "Na operação da Orthotechniques, vibe coding é ferramenta do dia a dia: sistemas e automações internas construídos conforme a necessidade do negócio aparece.",
     highlights: [
       "Tecnologia aplicada à rotina da empresa, sem depender de fornecedor externo",
     ],

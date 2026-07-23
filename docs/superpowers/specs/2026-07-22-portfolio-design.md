@@ -36,7 +36,7 @@ Modelo **home + páginas de caso** (hub and spoke):
 /404         personalizada, estética terminal
 ```
 
-Drakes e Orthotecniques ficam como cards ricos na home (sem página própria na V1); ganham páginas na V2+ quando houver métricas e materiais coletados.
+Drakes e Orthotechniques ficam como cards ricos na home (sem página própria na V1); ganham páginas na V2+ quando houver métricas e materiais coletados.
 
 ## 5. Conteúdo detalhado
 
@@ -46,7 +46,7 @@ Drakes e Orthotecniques ficam como cards ricos na home (sem página própria na 
 2. **Prova em números:** 28.000 linhas em produção · 4 áreas de empresa atendidas · 6+ usuários diários · 3 negócios construídos/co-fundados (Costa como builder; Drakes e Ortho como sócio) — números do CRM conferidos na exploração do repositório costa-crm
 3. **Card Costa Maritime** (caso principal) → `/crm`. Menciona a dupla entrega: CRM interno + site institucional (link para o site no ar). Print da tela do CRM.
 4. **Card Drakes Company** (sócio): email marketing, sites vendidos, recepcionista de IA, consultoria de GEO. Clientes: odontologia, oftalmologia (hospitais), restaurantes, cursos (ex: bolos), ortopedia. **Link para o site da Drakes no ar.**
-5. **Card Orthotecniques** (sócio): como vibe coding é empregado no dia a dia da operação. **Link para o site no ar.**
+5. **Card Orthotechniques** (sócio): como vibe coding é empregado no dia a dia da operação. **Link para o site no ar.**
 6. **Como eu trabalho:** processo de vibe coding em 3–4 passos (entender o negócio → prototipar com IA → iterar com usuários reais → produção e evolução). É onde "domínio técnico" aparece sem jargão.
 7. **Contato:** e-mail, WhatsApp (link direto), LinkedIn.
 
@@ -90,7 +90,7 @@ Narrativa em 5 atos:
 
 - [ ] Arquivo do avatar (ilustração P&B) em boa resolução
 - [ ] Prints das telas do CRM com dados fictícios (7 módulos; apoio: roteiro de quais telas capturar)
-- [ ] URLs dos sites: Costa Maritime, Drakes Company, Orthotecniques
+- [ ] URLs dos sites: Costa Maritime, Drakes Company, Orthotechniques
 - [ ] Links de contato: e-mail público, WhatsApp, LinkedIn
 - [ ] (Opcional V1) 1–2 números da Drakes (ex: nº de clientes atendidos, segmentos)
 
@@ -100,7 +100,7 @@ Narrativa em 5 atos:
 - Formulário de contato com backend
 - Blog/CMS
 - Versão em inglês
-- Páginas dedicadas para Drakes/Orthotecniques
+- Páginas dedicadas para Drakes/Orthotechniques
 
 ## 11. Critérios de aceite da V1
 
