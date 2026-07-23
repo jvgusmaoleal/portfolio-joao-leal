@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
+import { ArchDiagram } from "@/components/crm/arch-diagram";
 import { CaseHero } from "@/components/crm/case-hero";
 import { ModuleGallery } from "@/components/crm/module-gallery";
+import { StackList } from "@/components/crm/stack-list";
 import { Section } from "@/components/section";
 import { crm } from "@/content/crm";
 
@@ -24,6 +26,12 @@ export default function CrmCasePage() {
       </Section>
       <Section cmd="ls modulos/" title="A solução: 7 módulos, um fluxo">
         <ModuleGallery />
+      </Section>
+      <Section cmd="cat arquitetura.txt" title={crm.stack.heading}>
+        <div className="space-y-8">
+          <ArchDiagram />
+          <StackList />
+        </div>
       </Section>
     </main>
   );
