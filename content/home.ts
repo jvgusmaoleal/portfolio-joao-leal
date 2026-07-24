@@ -46,12 +46,14 @@ export const projects: Project[] = [
     badge: "Sócio",
     name: "Drakes Company",
     description:
-      "Agência digital onde aplico vibe coding em escala comercial: sites vendidos e entregues, e-mail marketing, recepcionista de IA e consultoria de GEO (aparecer nas respostas das IAs).",
+      "Agência que mede custo por cliente, não curtida. É onde aplico vibe coding em escala comercial: squads de agents que geram proposta e conteúdo, recepcionista de IA no WhatsApp e sites que convertem.",
     highlights: [
-      "Clientes: odontologia, hospitais de oftalmologia, restaurantes, cursos e ortopedia",
-      "Do site institucional à automação de atendimento com IA",
+      "Squads de agents no fluxo comercial: proposta e conteúdo gerados e revisados, não do zero",
+      "Recepcionista de IA que atende e agenda no WhatsApp, pensada pra clínicas",
+      "Setores atendidos: educação, saúde, software, logística e audiovisual",
     ],
     links: [
+      { label: "Ler a história", href: "/socio#drakes" },
       { label: "Visitar site", href: site.links.drakesSite, external: true },
     ],
   },
@@ -60,11 +62,13 @@ export const projects: Project[] = [
     badge: "Sócio",
     name: "Orthotechniques",
     description:
-      "Na operação da Orthotechniques, vibe coding é ferramenta do dia a dia: sistemas e automações internas construídos conforme a necessidade do negócio aparece.",
+      "Comunidade de educação médica que ensina cirurgia de joelho a ortopedistas. Sou o builder do lado técnico: funil de captação, plataforma da comunidade, e-mail marketing e gestão.",
     highlights: [
-      "Tecnologia aplicada à rotina da empresa, sem depender de fornecedor externo",
+      "Funil e site de captação da lista de interesse",
+      "E-mail marketing pra nutrir o interesse até virar aluno",
     ],
     links: [
+      { label: "Ler a história", href: "/socio#ortho" },
       { label: "Visitar site", href: site.links.orthoSite, external: true },
     ],
   },
