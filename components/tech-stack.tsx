@@ -34,7 +34,7 @@ export function TechStack() {
       <div>
         <h3 className="text-lg font-bold">Vibe coding, do meu jeito</h3>
         <p className="mt-1 text-sm text-mute">
-          IA escreve código rápido. O critério continua sendo meu.
+          O código sai rápido; estes quatro princípios seguram a qualidade.
         </p>
         <ol className="mt-4 grid gap-3 sm:grid-cols-2">
           {stack.principles.map((p, i) => (

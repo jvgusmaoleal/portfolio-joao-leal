@@ -1,7 +1,6 @@
 import { Hero } from "@/components/hero";
 import { StatsRow } from "@/components/stats-row";
 import { ProjectCard } from "@/components/project-card";
-import { ProcessSteps } from "@/components/process-steps";
 import { TechStack } from "@/components/tech-stack";
 import { Contact } from "@/components/contact";
 import { Section } from "@/components/section";
@@ -22,9 +21,6 @@ export default function Home() {
             ))}
           </div>
         </div>
-      </Section>
-      <Section cmd="cat processo.md" title="Como eu trabalho">
-        <ProcessSteps />
       </Section>
       <Section id="stack" cmd="cat stack.md" title="Stack & vibe coding">
         <TechStack />

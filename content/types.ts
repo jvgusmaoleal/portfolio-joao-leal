@@ -13,8 +13,6 @@ export type Project = {
   links: ProjectLink[]; // primeiro link = ação primária
 };
 
-export type ProcessStep = { cmd: string; title: string; text: string };
-
 export type ContactChannel = { label: string; href: string; handle: string };
 
 export type CrmModule = { name: string; blurb: string; image?: string };

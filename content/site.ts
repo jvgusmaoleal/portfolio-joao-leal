@@ -5,7 +5,7 @@ export const site = {
   title: "Product Builder",
   url: "https://joaoleal.dev",
   description:
-    "Construo produtos que geram receita real, com IA no centro do processo. Do primeiro protótipo à produção que a empresa inteira usa.",
+    "Construo os sistemas que rodam meus dois negócios e a operação de clientes como a Costa Maritime. Com IA no processo, entrego sozinho o que antes pedia uma equipe.",
   promptPath: "~/joao-leal",
   links: {
     costaSite: "https://costamaritime.com",

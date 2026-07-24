@@ -13,15 +13,15 @@ export const hero = {
   cmd: "git init joaoleal.dev",
   title: "Como este site foi construído",
   subtitle:
-    "Um bônus: o portfólio documentando a própria construção. Do brainstorm ao deploy, o processo inteiro está aqui — e tudo é público, no repositório, commit a commit.",
+    "Um bônus: o portfólio documentando a própria construção. Do brainstorm ao deploy, o processo inteiro está aqui, público no repositório.",
 };
 
 export const challenge = {
   cmd: "cat desafio.md",
   title: "O produto é o método",
   paragraphs: [
-    "Um portfólio de product builder tem um problema honesto: qualquer um diz que domina IA. A prova não é a tela bonita — é o processo que fez a tela existir e continuar de pé em produção.",
-    "Então a decisão foi construir este site com o mesmo método que ele descreve, e deixar o rastro aberto: spec, plano, execução e revisão, tudo commitado no repositório público. Esta página é o tour por esse rastro.",
+    "Um portfólio de product builder tem um problema honesto: qualquer um diz que domina IA. A prova está no processo que fez a tela existir e continuar de pé em produção.",
+    "Então a decisão foi construir este site com o mesmo método que ele descreve, e deixar o rastro aberto: spec, plano, execução e revisão, tudo commitado no repositório. Esta página é o tour por esse histórico.",
   ],
 };
 
@@ -29,12 +29,12 @@ export const pipeline = {
   cmd: "cat pipeline.md",
   title: "O pipeline, etapa por etapa",
   intro: [
-    "Nada aqui foi \"pedir código pra IA e colar\". Cada mudança passou por um fluxo fixo de skills encadeadas, com pontos de decisão que são meus, não do agente.",
+    "Nada aqui foi \"pedir código pra IA e colar\". Cada mudança passou por um fluxo fixo de skills, com pontos de decisão que ficam comigo.",
   ],
   steps: [
     {
       label: "brainstorming",
-      text: "Antes de qualquer código, uma conversa guiada transforma a ideia em requisito. Eu aprovo o design antes de seguir — nenhuma linha nasce sem esse aceite.",
+      text: "Antes de qualquer código, uma conversa guiada transforma a ideia em requisito. Eu aprovo o design antes de seguir: nenhuma linha nasce sem esse aceite.",
     },
     {
       label: "spec + self-review",
@@ -50,7 +50,7 @@ export const pipeline = {
     },
     {
       label: "humanizer na copy",
-      text: "Todo texto do site passa por uma skill que remove marcas de escrita de IA. Eu aprovo cada ajuste — a voz do portfólio é minha, não do gerador.",
+      text: "Todo texto do site passa por uma skill que remove marcas de escrita de IA. Eu aprovo cada ajuste antes de entrar.",
     },
     {
       label: "verificação antes de concluir",
@@ -76,7 +76,7 @@ export const timeline: TimelineChapter[] = [
   },
   {
     title: "Fundação: sistema antes das telas",
-    note: "Tokens, conteúdo tipado e componentes base — a estrutura primeiro.",
+    note: "Tokens, conteúdo tipado e componentes base: a estrutura primeiro.",
     commits: [
       { hash: "daa5a67", date: "22/07 17:50", message: "chore: scaffold Next.js + TS + Tailwind" },
       { hash: "17c93d7", date: "22/07 18:02", message: "feat: design tokens dark/ambar, fontes Inter + JetBrains Mono" },
@@ -103,7 +103,7 @@ export const timeline: TimelineChapter[] = [
   },
   {
     title: "Prova real: prints com dados fictícios",
-    note: "Prints reais com dados mascarados na camada de rede — e 86% mais leves.",
+    note: "Prints reais com dados mascarados na camada de rede, 86% mais leves.",
     commits: [
       { hash: "4f10ca6", date: "23/07 22:38", message: "feat: prints reais do CRM com dados ficticios (6 de 7 modulos)" },
       { hash: "9fef57c", date: "23/07 22:42", message: "perf: prints otimizados (2.6MB -> 0.37MB, -86%)" },
@@ -112,7 +112,7 @@ export const timeline: TimelineChapter[] = [
   },
   {
     title: "Segundo caso: /socio",
-    note: "Novo ciclo — brainstorm, spec, plano — e componentes extraídos pra reuso.",
+    note: "Novo ciclo (brainstorm, spec, plano) e componentes extraídos pra reuso.",
     commits: [
       { hash: "22bfb32", date: "24/07 01:39", message: "docs: spec da pagina /socio (Socio & builder, Drakes + Ortho)" },
       { hash: "5bc72da", date: "24/07 01:55", message: "refactor: CaseHero e BackLink genericos (compartilhados por /crm e /socio)" },
@@ -155,7 +155,7 @@ export const artifacts: ArtifactCard[] = [
   },
   {
     name: "Plano desta página",
-    role: "E o plano que a construiu — o mapa exato deste tour.",
+    role: "E o plano que a construiu: o mapa que os subagentes seguiram.",
     href: gh("docs/superpowers/plans/2026-07-24-making-of.md"),
   },
   {
@@ -169,7 +169,7 @@ export const backstage: BackstageStory[] = [
   {
     title: "Mascarar no DOM não bastava",
     paragraphs: [
-      "Os prints do CRM precisavam de dados fictícios. A primeira tentativa trocava o texto na tela — e falhava: o sistema re-renderiza e restaura o dado real no meio da captura.",
+      "Os prints do CRM precisavam de dados fictícios. A primeira tentativa trocava o texto na tela, e falhava: o sistema re-renderiza e restaura o dado real no meio da captura.",
       "A solução foi mascarar uma camada antes: interceptar as respostas da API e reescrevê-las antes de chegarem no app. Ainda assim, cada imagem foi revisada a olho antes de publicar. Foi assim que os vazamentos foram pegos.",
     ],
   },
@@ -177,21 +177,21 @@ export const backstage: BackstageStory[] = [
     title: "O framework mudou embaixo do plano",
     paragraphs: [
       "O plano assumia uma versão do Next.js; o scaffold instalou a seguinte, com convenções diferentes. Em vez de brigar com o agente, a lição virou arquivo.",
-      "O AGENTS.md passou a avisar toda sessão: leia a doc da versão instalada antes de escrever código. O imprevisto virou regra permanente.",
+      "O AGENTS.md passou a avisar toda sessão: leia a doc da versão instalada antes de escrever código.",
     ],
   },
   {
     title: "A voz é minha, não do gerador",
     paragraphs: [
-      "IA escreve rápido, mas com tiques reconhecíveis. Toda a copy passou por uma skill que caça essas marcas — foram 11 ajustes só na primeira passada, aprovados um a um.",
-      "O critério de o que soa como eu continua sendo meu. O agente propõe; eu decido.",
+      "IA escreve rápido, mas com tiques reconhecíveis. Toda a copy passou por uma skill que caça essas marcas: foram 11 ajustes só na primeira passada, aprovados um a um.",
+      "O critério do que soa como eu continua sendo meu: o agente propõe o ajuste e eu decido se entra.",
     ],
   },
   {
     title: "Nenhuma sessão começa do zero",
     paragraphs: [
       "Cada incidente que custou caro virou memória escrita: o OneDrive segurando lock de arquivo no install, o proxy da Cloudflare conflitando com o SSL da Vercel.",
-      "Da próxima vez, o problema já vem resolvido no contexto. O conhecimento fica no projeto, não na minha cabeça.",
+      "Da próxima vez, o problema já vem resolvido no contexto. O conhecimento mora no projeto.",
     ],
   },
 ];
@@ -200,9 +200,9 @@ export const recursion = {
   cmd: "git remote -v",
   title: "Feito à vista de todos",
   paragraphs: [
-    "Esta página não descreve o método de fora: ela saiu dele. Brainstorm, spec e plano commitados, execução por tarefas, verificação antes do commit — o mesmo fluxo dos outros dois casos.",
+    "Esta página não descreve o método de fora: ela saiu dele. Brainstorm, spec e plano commitados, execução por tarefas, verificação antes do commit, o mesmo fluxo dos outros dois casos.",
     "E tudo está aberto. O repositório é público: dá pra ler cada spec, cada plano e cada commit que levou a este parágrafo.",
   ],
 };
 
-export const ctaPrompt = "quer construir assim no seu produto?";
+export const ctaPrompt = "quer esse processo rodando na sua empresa?";

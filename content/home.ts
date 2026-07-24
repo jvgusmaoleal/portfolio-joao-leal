@@ -1,26 +1,20 @@
-import type {
-  ProcessStep,
-  Project,
-  StackGroup,
-  StackPrinciple,
-  Stat,
-} from "./types";
+import type { Project, StackGroup, StackPrinciple, Stat } from "./types";
 import { site } from "./site";
 
 export const hero = {
   cmd: "whoami",
   headline: "João Leal",
   role: "Product Builder",
-  sub: "Construo produtos que geram receita real, com IA no centro do processo. Do primeiro protótipo à produção que a empresa inteira usa.",
+  sub: "Construo os sistemas que rodam meus dois negócios e a operação de clientes como a Costa Maritime. Com IA no processo, entrego sozinho o que antes pedia uma equipe.",
   ctaPrimary: { label: "Ver projetos", href: "#projetos" },
   ctaSecondary: { label: "Contato", href: "#contato" },
 };
 
 export const stats: Stat[] = [
-  { value: "28.000+", label: "linhas de código em produção" },
+  { value: "3", label: "negócios construídos como sócio ou builder" },
   { value: "4", label: "áreas de negócio atendidas por um único sistema" },
   { value: "6+", label: "pessoas usando todos os dias" },
-  { value: "3", label: "negócios construídos como sócio ou builder" },
+  { value: "28.000+", label: "linhas de código em produção" },
 ];
 
 export const projects: Project[] = [
@@ -29,10 +23,10 @@ export const projects: Project[] = [
     badge: "Caso principal · Em produção",
     name: "Costa Maritime — CRM + site",
     description:
-      "CRM completo construído do zero para uma empresa de serviços marítimos: propostas, operação e faturamento no mesmo fluxo, mais o site institucional. Uma pessoa, quatro meses, a empresa inteira dentro.",
+      "CRM completo construído do zero para uma empresa de serviços marítimos: propostas, operação e faturamento no mesmo fluxo, mais o site institucional. Antes, proposta era montada no Excel e o total do mês fechava por prints numa conversa fixa do ChatGPT.",
     visual: "arch",
     highlights: [
-      "7 módulos · 23 tabelas · 6+ usuários diários",
+      "Uma pessoa, 4 meses: 7 módulos e 23 tabelas em produção",
       "Integrações: Microsoft Graph, Claude Vision, ShipServ, e-mail de prospecção",
       "Automação: proposta aprovada → PDF → OneDrive → e-mail → operação",
     ],
@@ -46,9 +40,9 @@ export const projects: Project[] = [
     badge: "Sócio",
     name: "Drakes Company",
     description:
-      "Agência que mede custo por cliente, não curtida. É onde aplico vibe coding em escala comercial: squads de agents que geram proposta e conteúdo, recepcionista de IA no WhatsApp e sites que convertem.",
+      "Agência que mede quanto custa cada cliente novo. É onde aplico o método em escala comercial, da proposta ao site no ar.",
     highlights: [
-      "Squads de agents no fluxo comercial: proposta e conteúdo gerados e revisados, não do zero",
+      "Squads de agents no fluxo comercial: o time revisa proposta e conteúdo já gerados",
       "Recepcionista de IA que atende e agenda no WhatsApp, pensada pra clínicas",
       "Setores atendidos: educação, saúde, software, logística e audiovisual",
     ],
@@ -62,7 +56,7 @@ export const projects: Project[] = [
     badge: "Sócio",
     name: "Orthotechniques",
     description:
-      "Comunidade de educação médica que ensina cirurgia de joelho a ortopedistas. Sou o builder do lado técnico: funil de captação, plataforma da comunidade, e-mail marketing e gestão.",
+      "Comunidade de educação médica que ensina cirurgia de joelho a ortopedistas. Sou o builder do lado técnico, da captação à plataforma da comunidade e à gestão.",
     highlights: [
       "Funil e site de captação da lista de interesse",
       "E-mail marketing pra nutrir o interesse até virar aluno",
@@ -80,7 +74,7 @@ export const projects: Project[] = [
       "Um estudo de caso do próprio portfólio: o método que usei pra construir este site, do brainstorm ao deploy, com specs, planos e commits abertos no repositório.",
     highlights: [
       "O pipeline de skills: brainstorm → spec → plano → subagentes → verificação",
-      "Da spec ao site no ar em menos de um dia",
+      "Da spec ao site no ar em menos de 24 horas",
       "Tudo público e verificável no repositório",
     ],
     links: [
@@ -92,18 +86,18 @@ export const projects: Project[] = [
 
 export const stack = {
   intro:
-    "Ferramenta nova se aprende no meio do projeto. O que eu trago pronto é o processo: transformar problema de negócio em spec, spec em tela funcionando, tela em produção — com IA acelerando cada etapa e engenharia segurando a qualidade.",
+    "Ferramenta nova se aprende no meio do projeto. O que eu trago pronto é o processo: transformar problema de negócio em spec, spec em tela funcionando, tela em produção. A IA acelera cada etapa; a engenharia segura o resultado. A primeira versão navegável sai em dias, e as decisões acontecem em cima da tela, não de um documento.",
   groups: [
     {
       label: "frontend",
       items: [
         {
           name: "JavaScript puro",
-          note: "28.000+ linhas em produção no CRM, decisão deliberada: zero dependência no núcleo",
+          note: "o núcleo do CRM da Costa roda sem nenhuma dependência npm",
         },
         {
           name: "Next.js + TypeScript + Tailwind",
-          note: "este portfólio: estático, tipado, Lighthouse 95+",
+          note: "este portfólio: estático, tipado, gerado inteiro no build",
         },
         {
           name: "PDF no navegador (jsPDF)",
@@ -120,7 +114,7 @@ export const stack = {
         },
         {
           name: "Supabase (PostgreSQL)",
-          note: "23 tabelas, migrações versionadas no repositório",
+          note: "banco do CRM inteiro em migrações versionadas",
         },
         {
           name: "Vercel + Railway + GitHub",
@@ -137,11 +131,11 @@ export const stack = {
         },
         {
           name: "Claude API + Vision",
-          note: "print de cotação vira registro estruturado no banco",
+          note: "print de cotação entra no banco como dado estruturado",
         },
         {
           name: "E-mail marketing sem ESP",
-          note: "envio pela Azure/Graph via proxy: remetente real, domínio protegido, relatórios automáticos",
+          note: "envio direto pela Azure/Graph via proxy, com relatórios automáticos",
         },
         {
           name: "ShipServ + AwesomeAPI",
@@ -154,7 +148,7 @@ export const stack = {
       items: [
         {
           name: "Claude Code todos os dias",
-          note: "skills encadeadas: brainstorming → spec → plano → execução por subagentes",
+          note: "cada mudança nasce de spec aprovada e termina verificada",
         },
         {
           name: "Disciplina embutida no agente",
@@ -162,7 +156,7 @@ export const stack = {
         },
         {
           name: "Memória de projeto",
-          note: "regras e incidentes viram skills próprias: nenhuma sessão começa do zero",
+          note: "regras e incidentes viram skills próprias que voltam no contexto da sessão seguinte",
         },
       ],
     },
@@ -170,47 +164,24 @@ export const stack = {
   principles: [
     {
       title: "Spec antes de código",
-      text: "28 fases documentadas em ~4 meses, ~30 specs no repositório. Cada fase: spec, implementação, validação com quem usa.",
+      text: "28 fases e ~30 specs internas em 4 meses. Cada fase entra desenhada e sai validada com quem usa.",
     },
     {
       title: "Teste onde o erro custa caro",
-      text: "11 arquivos de teste no CRM; o parser de PDFs nasceu test-first contra documentos reais — até a assinatura de e-mail tem teste.",
+      text: "11 arquivos de teste no CRM; o parser de PDFs nasceu test-first contra documentos reais. Até a assinatura de e-mail tem teste.",
     },
     {
-      title: "Produção de verdade",
-      text: "6+ pessoas dependem do sistema todo dia. Problema real aparece, é diagnosticado, resolvido e vira documentação.",
+      title: "Produção com consequência",
+      text: "Gente de quatro áreas depende do sistema. Problema que aparece é diagnosticado, resolvido e vira documentação.",
     },
     {
       title: "Memória institucional",
-      text: "Cada fase vira histórico, cada incidente vira regra escrita. O conhecimento fica na empresa — e o sistema não regride.",
+      text: "Cada fase vira histórico, cada incidente vira regra escrita. O conhecimento fica na empresa e o sistema não regride.",
     },
   ] satisfies StackPrinciple[],
   outro: {
-    lead: "Uma pessoa com esse processo entrega o que antes pedia uma equipe — na velocidade da conversa, com rastro de engenharia.",
-    linkText: "Este portfólio, aliás, saiu do mesmo método.",
+    lead: "Este portfólio, aliás, saiu do mesmo método.",
+    linkText: "Leia o making-of.",
     href: "/making-of",
   },
 };
-
-export const processSteps: ProcessStep[] = [
-  {
-    cmd: "entender",
-    title: "Mergulhar no negócio",
-    text: "Antes do código: quem usa, o que dói, o que vale dinheiro. O produto certo nasce do problema certo.",
-  },
-  {
-    cmd: "prototipar",
-    title: "Primeira versão em dias",
-    text: "Com IA no fluxo de trabalho, a primeira versão navegável sai em dias. As decisões acontecem em cima de tela real, não de documento.",
-  },
-  {
-    cmd: "iterar",
-    title: "Feedback de gente de verdade",
-    text: "Usuários reais usando, feedback direto, ajuste em ciclo curto. O produto evolui na velocidade da conversa.",
-  },
-  {
-    cmd: "produzir",
-    title: "Produção e evolução",
-    text: "Integrações, dados reais, automação de ponta a ponta. E o produto continua evoluindo depois do lançamento.",
-  },
-];

@@ -3,9 +3,9 @@ import { site } from "./site";
 
 export const hero = {
   cmd: "./deploy-squad --now",
-  title: "Squads de agents entregando de verdade",
+  title: "Squads de agents rodando dois negócios",
   subtitle:
-    "Sou sócio de dois negócios e rodo esse método neles todo dia: squads de agents que geram proposta e conteúdo, uma recepcionista de IA que atende no WhatsApp, e engenharia por baixo pra aguentar produção. Fornecedor entrega e some. Sócio fica e responde pelo resultado.",
+    "Sou sócio dos dois e aplico esse método neles todo dia: squads de agents que geram proposta e conteúdo, uma recepcionista de IA que atende no WhatsApp, e engenharia por baixo pra aguentar produção.",
   // Descrição curta só para SEO (~155 caracteres); o subtítulo acima é o texto de tela.
   seoDescription:
     "Sócio da Drakes e da Orthotechniques, onde aplico vibe coding todo dia: squads de agents, recepcionista de IA no WhatsApp e engenharia que aguenta produção.",
@@ -15,7 +15,7 @@ export const thesis = {
   cmd: "whoami --socio",
   paragraphs: [
     "Ser sócio muda o incentivo. Não entrego um projeto e sumo: eu convivo com o resultado mês após mês, porque parte dele é minha.",
-    "Por isso testo tudo no meu próprio quintal antes. O método que uso nos clientes é o mesmo que roda na Drakes e na Orthotechniques: agente acelera o trabalho, engenharia garante que aguenta produção.",
+    "Por isso testo tudo no meu próprio quintal antes: o que chega a cliente já rodou na Drakes e na Orthotechniques.",
   ],
 };
 
@@ -24,7 +24,7 @@ const drakes: SocioBusiness = {
   cmd: "cd ~/drakes",
   name: "Drakes Company",
   intro: [
-    "A Drakes é uma agência que mede o que importa: quanto custa cada cliente novo, não curtida. Toco a agência com o Henrique Sena, e o meu lado é construir os produtos e as automações que a gente entrega.",
+    "A Drakes mede quanto custa cada cliente novo, não curtida. Toco a agência com um sócio: a minha parte é construir os produtos e as automações que a gente entrega.",
   ],
   blocks: [
     {
@@ -33,7 +33,7 @@ const drakes: SocioBusiness = {
         {
           name: "Squad de propostas",
           detail:
-            "Lê a reunião gravada com o cliente, me entrevista pra preencher o que faltou e sugere escopo e preço a partir do histórico da própria Drakes. A proposta sai fundamentada, não no chute.",
+            "Lê a reunião gravada com o cliente, me entrevista pra preencher o que faltou e sugere escopo e preço a partir do histórico da própria Drakes.",
         },
         {
           name: "Squad de conteúdo",
@@ -48,7 +48,7 @@ const drakes: SocioBusiness = {
         {
           name: "Recepcionista de IA no WhatsApp",
           detail:
-            "Um atendente que responde na hora, tira dúvida, marca horário na agenda e persegue o lead que ficou sem resposta. Pensado pra clínica, onde lead parado é paciente que não voltou.",
+            "Responde na hora, tira dúvida, marca horário na agenda e persegue o lead que ficou sem resposta. Pensada pra clínica, onde lead parado é paciente que não voltou.",
           stack: [
             "WhatsApp Business Platform (API oficial da Meta) pra receber e responder",
             "Claude API pra entender a mensagem e conduzir a conversa",
@@ -63,17 +63,17 @@ const drakes: SocioBusiness = {
         {
           name: "Sites que convertem",
           detail:
-            "Next.js estático, Tailwind e deploy na Vercel, com a conversão medida de ponta a ponta. O mesmo jeito com que este portfólio e o site da Costa foram feitos.",
+            "Next.js estático, Tailwind e deploy na Vercel, com a conversão medida de ponta a ponta. Foi assim que este portfólio e o site da Costa foram feitos.",
         },
         {
           name: "E-mail marketing",
           detail:
-            "Disparo pela Microsoft Graph via proxy, sem plataforma de e-mail no meio: remetente real, domínio protegido e relatório de rotina. O mesmo que montei pra Costa.",
+            "Disparo pela Microsoft Graph via proxy, sem plataforma de e-mail no meio: remetente próprio, domínio protegido e relatório de rotina.",
         },
         {
           name: "Relatórios automáticos",
           detail:
-            "Todo mês o cliente recebe um relatório com a identidade visual dele, entregue por e-mail sem ninguém montar na mão. Vira rotina, e é a rotina que sustenta a relação.",
+            "Todo mês o cliente recebe um relatório com a identidade visual dele, entregue por e-mail sem ninguém montar na mão. Vira rotina, e essa rotina sustenta a relação com o cliente.",
         },
       ],
     },
@@ -105,7 +105,7 @@ const ortho: SocioBusiness = {
   name: "Orthotechniques",
   intro: [
     "A Orthotechniques é uma comunidade de educação médica: ensina técnicas de cirurgia de joelho a ortopedistas, conduzida por cirurgiões que operam de verdade. O negócio vive de atrair médico interessado e nutrir esse interesse até virar aluno.",
-    "Meu papel de sócio ali é o de sempre, do lado técnico: construo o funil e o site de captação, cuido da plataforma que entrega a comunidade, monto o e-mail marketing que nutre a lista de interesse (mesmo método da Costa) e mantenho a gestão interna rodando.",
+    "Meu papel de sócio ali é o de sempre, do lado técnico: construo o funil e o site de captação, cuido da plataforma que entrega a comunidade, monto o e-mail marketing que trabalha a lista de interesse e mantenho a gestão interna rodando.",
   ],
   link: { label: "Visitar orthotechniques.com.br", href: site.links.orthoSite },
 };
@@ -116,6 +116,6 @@ export const common = {
   cmd: "diff drakes ortho",
   paragraphs: [
     "Uma agência e uma escola de cirurgia não poderiam ser mais diferentes. Por dentro, é o mesmo método: agente acelera, spec vira tela, tela vira produção, e no fim tem alguém dono do resultado.",
-    "É isso que levo pra quem me contrata: não a ferramenta da moda, mas o hábito de transformar problema de negócio em coisa que funciona, rápido e sem quebrar.",
+    "É isso que levo pra quem me contrata: o hábito de pegar um problema de negócio e entregar coisa que funciona, rápido e sem quebrar.",
   ],
 };

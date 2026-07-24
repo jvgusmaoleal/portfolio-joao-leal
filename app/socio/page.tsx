@@ -43,7 +43,7 @@ export default function SocioPage() {
       <Section cmd={common.cmd} title="O fio comum">
         <Prose paragraphs={common.paragraphs} />
       </Section>
-      <ContactCta prompt="quer esse método tocando o seu negócio?" />
+      <ContactCta prompt="quer um sócio técnico assim no seu negócio?" />
     </main>
   );
 }

@@ -11,14 +11,14 @@ export const crm = {
     heading: "O que é o Costa Maritime Hub",
     paragraphs: [
       "Costa Maritime Hub é o nome que o sistema ganhou dentro da empresa: uma plataforma operacional única onde cotação vira proposta, proposta aprovada vira ordem de serviço e ordem executada vira faturamento.",
-      "Nasceu como um CRM de propostas. Antes dele, proposta era montada no Excel, o total do mês era controlado numa conversa fixa do ChatGPT que recebia prints das quotes, e relatório de vendas seguia pelo Teams. Conforme as outras áreas entraram, o CRM virou Hub — hoje é a tela aberta o dia inteiro no comercial, na operação, no financeiro e em suprimentos.",
+      "Nasceu como um CRM de propostas. Antes dele, proposta era montada no Excel, o total do mês era controlado numa conversa fixa do ChatGPT que recebia prints das quotes, e relatório de vendas seguia pelo Teams. Conforme as outras áreas entraram, o CRM virou Hub: hoje é a tela aberta o dia inteiro no comercial, na operação, no financeiro e em suprimentos.",
     ],
   },
 
   problem: {
     heading: "O problema",
     paragraphs: [
-      "A Costa Maritime atende navios em portos brasileiros — cotações chegam por e-mail, viram propostas, propostas aprovadas viram ordens de serviço, e tudo precisa ser faturado. Esse fluxo vivia espalhado em planilhas, caixas de entrada e documentos soltos.",
+      "A Costa Maritime atende navios em portos brasileiros, e todo o caminho da cotação ao faturamento vivia espalhado em planilhas, caixas de entrada e documentos soltos.",
       "Cada área tinha seu pedaço da informação: o comercial não via a execução, a operação não via o que foi vendido, o financeiro cobrava atrás dos dois. Retrabalho, follow-ups perdidos e zero visão de funil.",
     ],
   },
@@ -27,7 +27,7 @@ export const crm = {
     {
       name: "Dashboard",
       blurb:
-        "Metas mensais ao vivo (MTD), comparativo produtos vs serviços e extração de vendas a partir de um print — a IA lê a imagem e lança os dados.",
+        "Metas mensais ao vivo (MTD), comparativo produtos vs serviços e extração de vendas a partir de um print: a IA lê a imagem e lança os dados.",
       image: "dashboard.png",
     },
     {
@@ -39,7 +39,7 @@ export const crm = {
     {
       name: "Documentos",
       blurb:
-        "Proposta aprovada dispara a esteira: PDF gerado, arquivado no OneDrive, e-mail ao financeiro e card criado na operação. Sem toque humano.",
+        "Proposta aprovada dispara a esteira sem toque humano: PDF gerado, arquivado no OneDrive, e-mail ao financeiro e card criado na operação.",
       image: "documentos.png",
     },
     {
@@ -51,7 +51,7 @@ export const crm = {
     {
       name: "Contatos",
       blurb:
-        "Empresas, contatos e histórico de interações — a base que alimenta propostas e campanhas de prospecção.",
+        "Empresas, contatos e histórico de interações: a base que alimenta propostas e campanhas de prospecção.",
       image: "contatos.png",
     },
     {
@@ -63,7 +63,7 @@ export const crm = {
     {
       name: "ShipServ",
       blurb:
-        "RFQs que chegam por e-mail são monitoradas e viram proposta com um clique — a caixa de entrada deixou de ser gargalo.",
+        "RFQs que chegam por e-mail são monitoradas e viram proposta com um clique: a caixa de entrada deixou de ser gargalo.",
       image: "shipserv.png",
     },
   ] satisfies CrmModule[],
@@ -74,7 +74,7 @@ export const crm = {
       "Frontend em JavaScript puro, decisão deliberada: zero dependências npm no núcleo, carregamento instantâneo e manutenção simples.",
       "Proxy em Node.js faz a ponte segura com a Microsoft Graph API.",
       "Supabase (PostgreSQL, região São Paulo) com 23 tabelas e migrações versionadas.",
-      "Frontend na Vercel, proxy no Railway — deploy contínuo via GitHub.",
+      "Frontend na Vercel, proxy no Railway, deploy contínuo via GitHub.",
     ],
     integrations: [
       {
@@ -97,11 +97,11 @@ export const crm = {
   aiProcess: {
     heading: "IA no processo",
     paragraphs: [
-      "O sistema foi construído em 28 fases documentadas entre abril e julho de 2026: cada fase com spec, implementação e validação com os usuários reais.",
-      "Vibe coding aqui não é gerar código às cegas: é usar IA para transformar conversa com usuário em spec, spec em tela funcionando, feedback em iteração, tudo no mesmo dia. É o que permite uma pessoa entregar o que normalmente pediria uma equipe.",
+      "O sistema foi construído em fases documentadas entre abril e julho de 2026: cada uma com spec, implementação e validação com os usuários.",
+      "Vibe coding aqui não é gerar código às cegas: é usar IA para transformar conversa com usuário em spec, spec em tela funcionando, feedback em iteração, tudo no mesmo dia. É o que faz uma pessoa dar conta do que normalmente pediria uma equipe.",
     ],
     facts: [
-      "28 fases de desenvolvimento em ~4 meses",
+      "28 fases de desenvolvimento em 4 meses",
       "~30 documentos internos de especificação",
       "Testes unitários nos fluxos críticos",
       "Extração por IA (Claude Vision) embutida no produto final",
@@ -113,23 +113,23 @@ export const crm = {
     areas: [
       {
         area: "Comercial",
-        text: "Funil de propostas com follow-up automático progressivo e metas acompanhadas ao vivo no dashboard.",
+        text: "O funil saiu do Excel: cada proposta tem etapa, follow-up automático e meta acompanhada ao longo do mês.",
       },
       {
         area: "Operações",
-        text: "Ordens de serviço tarefa a tarefa, com anexos e status — o kanban substituiu a planilha paralela.",
+        text: "A planilha paralela morreu: a operação acompanha as fainas, com anexos e status, num quadro só.",
       },
       {
         area: "Financeiro",
-        text: "Aprovação de proposta gera PDF e e-mail automaticamente; faturamento rastreado item a item.",
+        text: "O financeiro parou de cobrar as outras áreas: aprovação entrega PDF e aviso automático, e cada item executado chega pronto pra faturar.",
       },
       {
         area: "Suprimentos",
-        text: "RFQs do ShipServ viram propostas em um clique; custos portuários centralizados e sempre atualizados.",
+        text: "RFQ vira proposta no mesmo dia, com custos portuários e câmbio atualizados na mesma tela.",
       },
     ] satisfies AreaResult[],
     extra:
-      "Hoje, mais de seis pessoas usam o sistema todos os dias. E o site institucional da Costa Maritime saiu do mesmo processo de vibe coding.",
+      "Hoje, o Hub é ferramenta diária de pelo menos seis pessoas na Costa. E o site institucional saiu do mesmo fluxo de trabalho.",
     siteUrl: site.links.costaSite,
   },
 };

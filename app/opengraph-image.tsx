@@ -54,8 +54,7 @@ export default function OgImage() {
             maxWidth: 900,
           }}
         >
-          Construo produtos que geram receita real, com IA no centro do
-          processo.
+          {`${site.description.split(". ")[0]}.`}
         </div>
       </div>
     ),
