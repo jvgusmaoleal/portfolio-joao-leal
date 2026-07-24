@@ -1,4 +1,10 @@
-import type { ProcessStep, Project, Stat } from "./types";
+import type {
+  ProcessStep,
+  Project,
+  StackGroup,
+  StackPrinciple,
+  Stat,
+} from "./types";
 import { site } from "./site";
 
 export const hero = {
@@ -27,7 +33,7 @@ export const projects: Project[] = [
     visual: "arch",
     highlights: [
       "7 módulos · 23 tabelas · 6+ usuários diários",
-      "Integrações: Microsoft 365, Claude Vision, ShipServ, SendPulse",
+      "Integrações: Microsoft 365 (Graph), Claude Vision, ShipServ, e-mail marketing próprio",
       "Automação: proposta aprovada → PDF → OneDrive → e-mail → operação",
     ],
     links: [
@@ -63,6 +69,105 @@ export const projects: Project[] = [
     ],
   },
 ];
+
+export const stack = {
+  intro:
+    "Ferramenta nova se aprende no meio do projeto. O que eu trago pronto é o processo: transformar problema de negócio em spec, spec em tela funcionando, tela em produção — com IA acelerando cada etapa e engenharia segurando a qualidade.",
+  groups: [
+    {
+      label: "frontend",
+      items: [
+        {
+          name: "JavaScript puro",
+          note: "28.000+ linhas em produção no CRM, decisão deliberada: zero dependência no núcleo",
+        },
+        {
+          name: "Next.js + TypeScript + Tailwind",
+          note: "este portfólio: estático, tipado, Lighthouse 95+",
+        },
+        {
+          name: "PDF no navegador (jsPDF)",
+          note: "propostas comerciais saem prontas, com a identidade da marca",
+        },
+      ],
+    },
+    {
+      label: "backend & dados",
+      items: [
+        {
+          name: "Node.js",
+          note: "proxy de integrações rodando 24/7 no Railway",
+        },
+        {
+          name: "Supabase (PostgreSQL)",
+          note: "23 tabelas, migrações versionadas no repositório",
+        },
+        {
+          name: "Vercel + Railway + GitHub",
+          note: "deploy contínuo dos dois lados desde o primeiro mês",
+        },
+      ],
+    },
+    {
+      label: "integrações",
+      items: [
+        {
+          name: "Microsoft Graph / 365",
+          note: "PDF no OneDrive, planilha no SharePoint, e-mail automático para financeiro e operação",
+        },
+        {
+          name: "Claude API + Vision",
+          note: "print de cotação vira registro estruturado no banco",
+        },
+        {
+          name: "E-mail marketing sem ESP",
+          note: "envio pela Azure/Graph via proxy: remetente real, domínio protegido, relatórios automáticos",
+        },
+        {
+          name: "ShipServ + AwesomeAPI",
+          note: "RFQs monitoradas a cada 30 min; câmbio USD/BRL ao vivo",
+        },
+      ],
+    },
+    {
+      label: "ia no fluxo",
+      items: [
+        {
+          name: "Claude Code todos os dias",
+          note: "skills encadeadas: brainstorming → spec → plano → execução por subagentes",
+        },
+        {
+          name: "Disciplina embutida no agente",
+          note: "TDD, debugging sistemático e verificação antes de concluir",
+        },
+        {
+          name: "Memória de projeto",
+          note: "regras e incidentes viram skills próprias: nenhuma sessão começa do zero",
+        },
+      ],
+    },
+  ] satisfies StackGroup[],
+  principles: [
+    {
+      title: "Spec antes de código",
+      text: "28 fases documentadas em ~4 meses, ~30 specs no repositório. Cada fase: spec, implementação, validação com quem usa.",
+    },
+    {
+      title: "Teste onde o erro custa caro",
+      text: "11 arquivos de teste no CRM; o parser de PDFs nasceu test-first contra documentos reais — até a assinatura de e-mail tem teste.",
+    },
+    {
+      title: "Produção de verdade",
+      text: "6+ pessoas dependem do sistema todo dia. Problema real aparece, é diagnosticado, resolvido e vira documentação.",
+    },
+    {
+      title: "Memória institucional",
+      text: "Cada fase vira histórico, cada incidente vira regra escrita. O conhecimento fica na empresa — e o sistema não regride.",
+    },
+  ] satisfies StackPrinciple[],
+  outro:
+    "Uma pessoa com esse processo entrega o que antes pedia uma equipe — na velocidade da conversa, com rastro de engenharia. Este portfólio, aliás, saiu do mesmo método.",
+};
 
 export const processSteps: ProcessStep[] = [
   {

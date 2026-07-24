@@ -22,3 +22,9 @@ export type CrmModule = { name: string; blurb: string; image?: string };
 export type AreaResult = { area: string; text: string };
 
 export type Integration = { name: string; desc: string };
+
+export type StackItem = { name: string; note: string };
+
+export type StackGroup = { label: string; items: StackItem[] };
+
+export type StackPrinciple = { title: string; text: string };
