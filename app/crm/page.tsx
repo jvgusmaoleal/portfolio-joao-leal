@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { CaseHero } from "@/components/crm/case-hero";
+import { CaseHero } from "@/components/case-hero";
 import { ModuleGallery } from "@/components/crm/module-gallery";
 import { ArchDiagram } from "@/components/crm/arch-diagram";
 import { StackList } from "@/components/crm/stack-list";
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
 export default function CrmCasePage() {
   return (
     <main>
-      <CaseHero />
+      <CaseHero cmd={crm.cmd} title={crm.title} subtitle={crm.subtitle} />
       <Section cmd="whatis costa-maritime-hub" title={crm.definition.heading}>
         <div className="max-w-2xl space-y-4">
           {crm.definition.paragraphs.map((p) => (
