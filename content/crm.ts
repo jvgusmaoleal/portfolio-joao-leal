@@ -129,7 +129,7 @@ export const crm = {
       },
     ] satisfies AreaResult[],
     extra:
-      "Hoje, o Hub é ferramenta diária de pelo menos seis pessoas na Costa. E o site institucional saiu do mesmo fluxo de trabalho.",
+      "Hoje, o Hub concentra comercial, operação, financeiro e suprimentos da Costa num sistema só. E o site institucional saiu do mesmo fluxo de trabalho.",
     siteUrl: site.links.costaSite,
   },
 };

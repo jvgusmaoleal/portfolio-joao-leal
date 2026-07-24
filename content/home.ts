@@ -13,8 +13,7 @@ export const hero = {
 export const stats: Stat[] = [
   { value: "3", label: "negócios construídos como sócio ou builder" },
   { value: "4", label: "áreas de negócio atendidas por um único sistema" },
-  { value: "6+", label: "pessoas usando todos os dias" },
-  { value: "28.000+", label: "linhas de código em produção" },
+  { value: "4 meses", label: "do papel à produção" },
 ];
 
 export const projects: Project[] = [

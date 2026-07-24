@@ -1,5 +1,4 @@
 import { Hero } from "@/components/hero";
-import { StatsRow } from "@/components/stats-row";
 import { ProjectCard } from "@/components/project-card";
 import { TechStack } from "@/components/tech-stack";
 import { Contact } from "@/components/contact";
@@ -11,7 +10,6 @@ export default function Home() {
   return (
     <main>
       <Hero />
-      <StatsRow />
       <Section id="projetos" cmd="ls projetos/" title="Projetos">
         <div className="grid gap-4">
           <ProjectCard project={crmProject} />
