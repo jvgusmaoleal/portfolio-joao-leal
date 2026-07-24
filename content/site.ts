@@ -11,6 +11,7 @@ export const site = {
     costaSite: "https://costamaritime.com",
     drakesSite: "https://drakescompany.com",
     orthoSite: "https://orthotechniques.com.br",
+    repo: "https://github.com/jvgusmaoleal/portfolio-joao-leal",
   },
   contacts: [
     {
