@@ -1,5 +1,5 @@
-import { site } from "@/content/site";
 import { BackLink } from "./back-link";
+import { TerminalPrompt } from "./terminal-prompt";
 
 export function CaseHero({
   cmd,
@@ -13,10 +13,7 @@ export function CaseHero({
   return (
     <header className="mx-auto max-w-5xl px-5 pb-4 pt-14 sm:pt-20">
       <BackLink />
-      <p aria-hidden="true" className="mt-8 font-mono text-sm">
-        <span className="text-amber">{site.promptPath} $</span>{" "}
-        <span className="text-mute">{cmd}</span>
-      </p>
+      <TerminalPrompt cmd={cmd} className="mt-8" />
       <h1 className="mt-4 max-w-3xl text-3xl font-bold tracking-tight sm:text-5xl">
         {title}
       </h1>
