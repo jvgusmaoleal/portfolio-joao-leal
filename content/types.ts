@@ -8,6 +8,7 @@ export type Project = {
   name: string;
   description: string;
   image?: string; // print em public/crm/ — renderiza no card quando o arquivo existir
+  visual?: "arch"; // "arch" troca o print pelo diagrama de arquitetura (prova de stack)
   highlights: string[];
   links: ProjectLink[]; // primeiro link = ação primária
 };

@@ -24,7 +24,7 @@ export const projects: Project[] = [
     name: "Costa Maritime — CRM + site",
     description:
       "CRM completo construído do zero para uma empresa de serviços marítimos: propostas, operação e faturamento no mesmo fluxo, mais o site institucional. Uma pessoa, quatro meses, a empresa inteira dentro.",
-    image: "dashboard.png",
+    visual: "arch",
     highlights: [
       "7 módulos · 23 tabelas · 6+ usuários diários",
       "Integrações: Microsoft 365, Claude Vision, ShipServ, SendPulse",

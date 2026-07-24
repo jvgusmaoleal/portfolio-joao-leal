@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import type { Project } from "@/content/types";
 import { printExists } from "@/lib/prints";
+import { ArchStack } from "@/components/arch-stack";
 
 function CardLink({
   link,
@@ -36,7 +37,8 @@ function CardLink({
 export function ProjectCard({ project }: { project: Project }) {
   return (
     <article className="flex flex-col rounded-lg border border-line bg-surface p-6">
-      {project.image && printExists(project.image) ? (
+      {project.visual === "arch" ? <ArchStack /> : null}
+      {project.visual !== "arch" && project.image && printExists(project.image) ? (
         <Image
           src={`/crm/${project.image}`}
           alt={`Tela do sistema ${project.name}`}
