@@ -33,7 +33,7 @@ export const projects: Project[] = [
     visual: "arch",
     highlights: [
       "7 módulos · 23 tabelas · 6+ usuários diários",
-      "Integrações: Microsoft 365 (Graph), Claude Vision, ShipServ, e-mail marketing próprio",
+      "Integrações: Microsoft Graph, Claude Vision, ShipServ, e-mail de prospecção",
       "Automação: proposta aprovada → PDF → OneDrive → e-mail → operação",
     ],
     links: [
