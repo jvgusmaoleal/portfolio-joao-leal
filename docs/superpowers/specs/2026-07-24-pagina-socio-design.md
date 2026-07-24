@@ -44,7 +44,7 @@ Uma página única `/socio` que:
 - **Recepcionista de IA:** o João **construiu**, mas ainda não vendeu para clínica. Escrever
   **como capacidade + o "como" (arquitetura/stack)**, em presente, com alvo = clínicas. **Não
   afirmar** que já há clínica usando.
-- **Tráfego pago:** operado pelo Henrique (sócio). No portfólio, o entregável do João é a
+- **Tráfego pago:** operado pelo outro sócio. No portfólio, o entregável do João é a
   **automação de relatórios** com a identidade visual do cliente, entregues por email automático.
 - **Guardas:** copy passa pela skill `humanizer`; o João aprova todo o texto antes do commit.
 
@@ -90,7 +90,7 @@ pelo João.
 
 ### 3. Drakes (`id="drakes"`)
 - `cmd`: `cd ~/drakes`
-- **Intro:** a Drakes mede **custo por cliente** (não vaidade); sociedade com Henrique Sena. O
+- **Intro:** a Drakes mede **custo por cliente** (não vaidade); sociedade com o outro sócio. O
   papel do João: builder dos produtos e das automações que a agência entrega.
 
 - **Bloco A — Como eu trabalho: squads de agents (OpenSquad).** O diferencial de abertura da

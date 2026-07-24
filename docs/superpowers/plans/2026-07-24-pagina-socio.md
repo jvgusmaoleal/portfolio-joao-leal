@@ -294,7 +294,7 @@ const drakes: SocioBusiness = {
   cmd: "cd ~/drakes",
   name: "Drakes Company",
   intro: [
-    "A Drakes é uma agência que mede o que importa: quanto custa cada cliente novo, não curtida. Toco a agência com o Henrique Sena, e o meu lado é construir os produtos e as automações que a gente entrega.",
+    "A Drakes é uma agência que mede o que importa: quanto custa cada cliente novo, não curtida. Toco a agência com um sócio: a minha parte é construir os produtos e as automações que a gente entrega.",
   ],
   blocks: [
     {
