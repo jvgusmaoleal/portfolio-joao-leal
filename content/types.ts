@@ -50,3 +50,25 @@ export type SocioBusiness = {
   note?: string;
   link: { label: string; href: string };
 };
+
+export type TimelineCommit = {
+  hash: string;    // hash curto real, ex.: "63fed5f"
+  date: string;    // ex.: "22/07 17:16"
+  message: string; // mensagem real do commit
+};
+
+export type TimelineChapter = {
+  title: string;             // ex.: "Do brainstorm ao plano"
+  note: string;              // 1 linha de narrativa (vira comentário no log)
+  commits: TimelineCommit[];
+};
+
+export type PipelineStep = { label: string; text: string };
+
+export type ArtifactCard = {
+  name: string; // ex.: "Spec do portfólio V1"
+  role: string; // papel no processo
+  href: string; // deep link para o arquivo no GitHub
+};
+
+export type BackstageStory = { title: string; paragraphs: string[] };
