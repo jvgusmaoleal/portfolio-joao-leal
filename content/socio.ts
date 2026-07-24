@@ -6,6 +6,9 @@ export const hero = {
   title: "Squads de agents entregando de verdade",
   subtitle:
     "Sou sócio de dois negócios e rodo esse método neles todo dia: squads de agents que geram proposta e conteúdo, uma recepcionista de IA que atende no WhatsApp, e engenharia por baixo pra aguentar produção. Fornecedor entrega e some. Sócio fica e responde pelo resultado.",
+  // Descrição curta só para SEO (~155 caracteres); o subtítulo acima é o texto de tela.
+  seoDescription:
+    "Sócio da Drakes e da Orthotechniques, onde aplico vibe coding todo dia: squads de agents, recepcionista de IA no WhatsApp e engenharia que aguenta produção.",
 };
 
 export const thesis = {

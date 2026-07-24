@@ -11,7 +11,7 @@ const pageTitle = "Sócio & builder: Drakes e Orthotechniques";
 
 export const metadata: Metadata = {
   title: pageTitle,
-  description: hero.subtitle,
+  description: hero.seoDescription,
   alternates: { canonical: "/socio" },
   openGraph: {
     type: "website",
@@ -19,12 +19,12 @@ export const metadata: Metadata = {
     url: "/socio",
     siteName: `${site.name} — ${site.title}`,
     title: pageTitle,
-    description: hero.subtitle,
+    description: hero.seoDescription,
   },
   twitter: {
     card: "summary_large_image",
     title: pageTitle,
-    description: hero.subtitle,
+    description: hero.seoDescription,
   },
 };
 
