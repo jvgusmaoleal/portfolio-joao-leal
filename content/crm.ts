@@ -78,7 +78,10 @@ export const crm = {
         desc: "extração de dados de imagens de cotações — print vira registro estruturado",
       },
       { name: "ShipServ", desc: "monitoramento de RFQs via parsing de e-mails" },
-      { name: "SendPulse", desc: "campanhas de prospecção segmentadas" },
+      {
+        name: "E-mail de prospecção",
+        desc: "campanhas direto pela Azure/Graph via proxy, sem ESP — remetente real, supressão de bounces e relatórios de rotina automáticos",
+      },
       { name: "AwesomeAPI", desc: "cotação USD/BRL em tempo real" },
     ] satisfies Integration[],
   },
