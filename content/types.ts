@@ -28,3 +28,25 @@ export type StackItem = { name: string; note: string };
 export type StackGroup = { label: string; items: StackItem[] };
 
 export type StackPrinciple = { title: string; text: string };
+
+export type SocioItem = {
+  name: string;
+  detail: string;
+  stack?: string[]; // peças/tecnologias, quando fizer sentido (ex.: recepcionista de IA)
+};
+
+export type SocioBlock = {
+  heading: string;
+  items: SocioItem[];
+};
+
+export type SocioBusiness = {
+  id: string; // "drakes" | "ortho" — vira a âncora da Section
+  cmd: string;
+  name: string;
+  intro: string[];
+  blocks?: SocioBlock[];
+  sectors?: string[];
+  note?: string;
+  link: { label: string; href: string };
+};
