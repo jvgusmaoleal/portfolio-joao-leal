@@ -24,6 +24,9 @@ out/
 .DS_Store
 *.pem
 
+# documentos de clientes nunca entram no repositório público
+*.pdf
+
 # debug
 npm-debug.log*
 yarn-debug.log*
