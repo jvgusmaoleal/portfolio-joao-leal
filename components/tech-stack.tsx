@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import { stack } from "@/content/home";
 
 export function TechStack() {
@@ -54,7 +56,13 @@ export function TechStack() {
         </ol>
       </div>
       <p className="max-w-3xl text-sm leading-relaxed text-mute sm:text-base">
-        {stack.outro}
+        {stack.outro.lead}{" "}
+        <Link
+          href={stack.outro.href}
+          className="text-amber underline underline-offset-4 transition-colors hover:text-amber-soft"
+        >
+          {stack.outro.linkText}
+        </Link>
       </p>
     </div>
   );

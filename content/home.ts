@@ -68,6 +68,22 @@ export const projects: Project[] = [
       { label: "Visitar site", href: site.links.orthoSite, external: true },
     ],
   },
+  {
+    id: "making-of",
+    badge: "Bônus",
+    name: "Como este site foi construído",
+    description:
+      "Um estudo de caso do próprio portfólio: o método que usei pra construir este site, do brainstorm ao deploy, com specs, planos e commits abertos no repositório.",
+    highlights: [
+      "O pipeline de skills: brainstorm → spec → plano → subagentes → verificação",
+      "Da spec ao site no ar em menos de um dia",
+      "Tudo público e verificável no repositório",
+    ],
+    links: [
+      { label: "Ler o making-of", href: "/making-of" },
+      { label: "Ver o repositório", href: site.links.repo, external: true },
+    ],
+  },
 ];
 
 export const stack = {
@@ -165,8 +181,11 @@ export const stack = {
       text: "Cada fase vira histórico, cada incidente vira regra escrita. O conhecimento fica na empresa — e o sistema não regride.",
     },
   ] satisfies StackPrinciple[],
-  outro:
-    "Uma pessoa com esse processo entrega o que antes pedia uma equipe — na velocidade da conversa, com rastro de engenharia. Este portfólio, aliás, saiu do mesmo método.",
+  outro: {
+    lead: "Uma pessoa com esse processo entrega o que antes pedia uma equipe — na velocidade da conversa, com rastro de engenharia.",
+    linkText: "Este portfólio, aliás, saiu do mesmo método.",
+    href: "/making-of",
+  },
 };
 
 export const processSteps: ProcessStep[] = [
