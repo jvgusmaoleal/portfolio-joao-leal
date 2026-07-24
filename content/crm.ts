@@ -7,6 +7,14 @@ export const crm = {
   subtitle:
     "Como uma pessoa construiu em 4 meses, com IA no processo, o sistema que atende comercial, operações, financeiro e suprimentos de uma empresa marítima.",
 
+  definition: {
+    heading: "O que é o Costa Maritime Hub",
+    paragraphs: [
+      "Costa Maritime Hub é o nome que o sistema ganhou dentro da empresa: uma plataforma operacional única onde cotação vira proposta, proposta aprovada vira ordem de serviço e ordem executada vira faturamento.",
+      "Nasceu como um CRM de propostas. Antes dele, proposta era montada no Excel, o total do mês era controlado numa conversa fixa do ChatGPT que recebia prints das quotes, e relatório de vendas seguia pelo Teams. Conforme as outras áreas entraram, o CRM virou Hub — hoje é a tela aberta o dia inteiro no comercial, na operação, no financeiro e em suprimentos.",
+    ],
+  },
+
   problem: {
     heading: "O problema",
     paragraphs: [
@@ -75,12 +83,12 @@ export const crm = {
       },
       {
         name: "Claude Vision",
-        desc: "extração de dados de imagens de cotações — print vira registro estruturado",
+        desc: "extração de dados de imagens de cotações: print vira registro estruturado",
       },
       { name: "ShipServ", desc: "monitoramento de RFQs via parsing de e-mails" },
       {
         name: "E-mail de prospecção",
-        desc: "campanhas direto pela Azure/Graph via proxy, sem ESP — remetente real, supressão de bounces e relatórios de rotina automáticos",
+        desc: "campanhas direto pela Azure/Graph via proxy, sem ESP: remetente real, supressão de bounces e relatórios de rotina automáticos",
       },
       { name: "AwesomeAPI", desc: "cotação USD/BRL em tempo real" },
     ] satisfies Integration[],
@@ -121,7 +129,7 @@ export const crm = {
       },
     ] satisfies AreaResult[],
     extra:
-      "Hoje, mais de seis pessoas usam o sistema todos os dias. Além do CRM, o site institucional da Costa Maritime também foi construído com vibe coding. A presença digital da empresa, de ponta a ponta, saiu do mesmo processo.",
+      "Hoje, mais de seis pessoas usam o sistema todos os dias. E o site institucional da Costa Maritime saiu do mesmo processo de vibe coding.",
     siteUrl: site.links.costaSite,
   },
 };

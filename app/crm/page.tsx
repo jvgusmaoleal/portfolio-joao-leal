@@ -33,6 +33,15 @@ export default function CrmCasePage() {
   return (
     <main>
       <CaseHero />
+      <Section cmd="whatis costa-maritime-hub" title={crm.definition.heading}>
+        <div className="max-w-2xl space-y-4">
+          {crm.definition.paragraphs.map((p) => (
+            <p key={p.slice(0, 32)} className="leading-relaxed text-mute">
+              {p}
+            </p>
+          ))}
+        </div>
+      </Section>
       <Section cmd="git log --reverse" title={crm.problem.heading}>
         <div className="max-w-2xl space-y-4">
           {crm.problem.paragraphs.map((p) => (
